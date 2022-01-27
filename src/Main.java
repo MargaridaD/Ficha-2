@@ -124,11 +124,11 @@ public class Main {
 		System.out.println("Months: " + meses + "\nDays: " + dias +"\nHour: " + horas + "\nMinutes: " + minutos + "\nSeconds: " + segundos);
 		
 		meses= aSegundos/(30*24*60*60);
-		dias=(aSegundos%(30*24*60*60))/(60*60*24);
+		dias=(aSegundos%(30*24*60*60))/(60*60*24);  //aSegundos%(30*24*60*60) dá o resto da divisão de aSegundos por (30*24*60*60)
 		horas= (aSegundos%(60*60*24))/(60*60);
 		minutos= (aSegundos%(60*60))/60;
 		segundos= aSegundos%60;
-		System.out.println("Months: " + meses + "\nDays: " + dias +"\nHour: " + horas + "\nMinutes: " + minutos + "\nSeconds: " + segundos);
+		System.out.println("\nMonths: " + meses + "\nDays: " + dias +"\nHour: " + horas + "\nMinutes: " + minutos + "\nSeconds: " + segundos);
 		
 		
 	}
@@ -154,7 +154,12 @@ public class Main {
 		System.out.print("\n\nInsira o número de segundos: ");
 		int segundos = sc.nextInt();
 		convertSeconds(segundos);
+		
+		
+		sc.close();
 
 	}
+	
+
 
 }
